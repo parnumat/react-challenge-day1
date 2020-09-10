@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import NavBottomBar from "./body/nav-bottom-bar/NavBottomBar";
+import PrimarySearchAppBar from "./body/app-bar/PrimarySearchAppBar";
+import { TableFooter } from "@material-ui/core";
+import avengers from "./assets/icon/avengers-icon.png";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <PrimarySearchAppBar />
+      </div>
+      <img src={avengers} className="App-logo" alt="avengers" />
+      <div style={{ width: "100%" }}>
+        <NavBottomBar />
+      </div>
     </div>
   );
 }
