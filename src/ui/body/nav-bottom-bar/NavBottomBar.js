@@ -8,6 +8,7 @@ import BlurCircular from "@material-ui/icons/BlurCircular";
 
 const useStyles = makeStyles({
   root: {
+    position: "fixed",
     color: "primary",
     width: "100%",
   },
